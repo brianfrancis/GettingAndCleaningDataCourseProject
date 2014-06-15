@@ -39,12 +39,13 @@ It is called by run_analysis.  The files read in are the following:
 
 ### merge_data
 
-merge_data receives as a parameter the list of data.frame created by get_data.
+merge_data receives as a parameter the list of data frames created by get_data.
 
 The function then does the following:
 
-1. Combines the subjects, activities, and measurements for both the training and test data sets into different colummns of a data frame
-2. Combines the rows of observations for test and train subjects into a single data frame
+1. Combines the subjects, activities, and measurements for the training subjects into different colummns of a data frame.
+Does the same thing for thet test subjects in a second data frame.
+2. Combines the rows of observations in the two data frames created in step 1 for test and train subjects into a single data frame
 3. Labels the data set with descriptive variable names using the values found in features.txt
 4. Subsets the dataset to only include measurements containing exactly "mean()" or "std()" in their varaible label by using the "fixed" parameter of the grepl function.
 	*Variables with meanFreq were not included as I did not interpret this weighted average of the frequency components to be a "mean" of the measurements.
