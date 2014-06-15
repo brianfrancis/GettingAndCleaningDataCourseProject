@@ -47,9 +47,9 @@ The function then does the following:
 Does the same thing for thet test subjects in a second data frame.
 2. Combines the rows of observations in the two data frames created in step 1 for test and train subjects into a single data frame
 3. Labels the data set with descriptive variable names using the values found in features.txt
-4. Subsets the dataset to only include measurements containing exactly "mean()" or "std()" in their varaible label by using the "fixed" parameter of the grepl function.
-	*Variables with meanFreq were not included as I did not interpret this weighted average of the frequency components to be a "mean" of the measurements.
-	*Similiarly features such as "angle(X,gravityMean)" were not included.
+4. Subsets the dataset to only include measurements containing exactly "mean()" or "std()" in their variable label by using the "fixed" parameter of the grepl function.
+	* Variables with meanFreq were not included as I did not interpret this weighted average of the frequency components to be a "mean" of the measurements.
+	* Similiarly features such as "angle(X,gravityMean)" were not included.
 5. Uses descriptive activity names in the activity_labels.txt file to name the activities in the data set by converting them to a factor and using the labels as the labels for the levels.
 
 This tiddy data frame which still contains a row for each observation in X_test.txt and X_train.txt is then returned by the function
@@ -76,8 +76,8 @@ It does the following:
 
 3. Download run_analysis.R to your working directory from https://github.com/brianfrancis/GettingAndCleaningDataCourseProject
 
-4. In R run: source("run_analysis.R");
+4. In R run: 'source("run_analysis.R");'
 
-5. In R run: run_analysis();
+5. In R run: 'run_analysis();'
 
-This will produce the tab delimieted tidy data set as the file tidy.txt in the working directory.
+This will produce the tab delimited tidy data set as the file tidy.txt in the working directory.
