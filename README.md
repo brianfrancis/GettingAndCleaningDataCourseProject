@@ -50,7 +50,7 @@ Does the same thing for thet test subjects in a second data frame.
 4. Subsets the dataset to only include measurements containing exactly "mean()" or "std()" in their variable label by using the "fixed" parameter of the grepl function.
 	* Variables with meanFreq were not included as I did not interpret this weighted average of the frequency components to be a "mean" of the measurements.
 	* Similiarly features such as "angle(X,gravityMean)" were not included.
-5. Uses descriptive activity names in the activity_labels.txt file to name the activities in the data set by converting them to a factor and using the labels as the labels for the levels.
+5. Uses descriptive activity names in the activity_labels.txt file to name the activities in the data set by converting them to a factor and using the character vector as the labels for the levels.
 
 This tiddy data frame which still contains a row for each observation in X_test.txt and X_train.txt is then returned by the function
 
@@ -72,7 +72,7 @@ It does the following:
 
 1. Download the raw data to your working directory https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-2. Unzip the raw data in your working directory and name the folder: getdata-projectfiles-UCI HAR Dataset
+2. Unzip the raw data in your working directory and name the folder: `getdata-projectfiles-UCI HAR Dataset`
 
 3. Download run_analysis.R to your working directory from https://github.com/brianfrancis/GettingAndCleaningDataCourseProject
 
@@ -80,4 +80,4 @@ It does the following:
 
 5. In R run: `run_analysis();`
 
-This will produce the tab delimited tidy data set as the file tidy.txt in the working directory.
+This will produce the tab delimited tidy data set as the file `tidy.txt` in the working directory.
