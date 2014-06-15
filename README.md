@@ -76,8 +76,8 @@ It does the following:
 
 3. Download run_analysis.R to your working directory from https://github.com/brianfrancis/GettingAndCleaningDataCourseProject
 
-4. In R run: 'source("run_analysis.R");'
+4. In R run: `source("run_analysis.R");`
 
-5. In R run: 'run_analysis();'
+5. In R run: `run_analysis();`
 
 This will produce the tab delimited tidy data set as the file tidy.txt in the working directory.
