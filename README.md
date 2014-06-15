@@ -26,12 +26,12 @@ The directory the files are located in is passed as a parameter.
 
 It is called by run_analysis.  The files read in are the following:
 
-1. activity_lables.txt - contains a the descriptive label for the activities stored y_test.txt and y_train.txt
+1. activity_lables.txt - contains the descriptive label for the activities stored y_test.txt and y_train.txt
 2. features.txt - contains descriptions for the measurements in the columns of X_test.txt and X_train.txt
-3. X_test.txt - data set of the measurements taken on the test subjects
+3. X_test.txt - data set of the 561 different varible measurements taken on each of the test subjects for each of the activities
 4. subject_test.txt -  contains the subjects for each row of measurements in X_test.txt
 5. y_test.txt - contains the activities performed (as a number) for each row of measurements in X_test.txt
-6  X_train.txt - data set of the measurements taken on the train subjects
+6. X_train.txt - data set of the 561 different varible measurements taken on each of the test subjects for each of the activities
 7. subject_train.txt -  contains the subjects for each row of measurements in X_train.txt
 8. y_train.txt - contains the activities performed (as a number) for each row of measurements in X_train.txt
 
