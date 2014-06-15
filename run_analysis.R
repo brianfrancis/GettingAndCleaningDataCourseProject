@@ -1,3 +1,13 @@
+## Script created by Brian Francis on 15 June 2014
+
+## Provides the following:
+## 1. Merges the training and the test sets to create one data set.
+## 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+## 3. Uses descriptive activity names to name the activities in the data set
+## 4. Appropriately labels the data set with descriptive variable names.
+## 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
 ##reads in all the files needed and returns them as a list
 get_data <- function(directory) {
         ##get codes for activity labels
