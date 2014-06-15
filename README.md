@@ -47,7 +47,7 @@ The function then does the following:
 Does the same thing for thet test subjects in a second data frame.
 2. Combines the rows of observations in the two data frames created in step 1 for test and train subjects into a single data frame
 3. Labels the data set with descriptive variable names using the values found in features.txt
-4. Subsets the dataset to only include measurements containing exactly `mean()` or `std()` in their variable label by settoing the `fixed` parameter of the `grepl` function to FALSE.
+4. Subsets the dataset to only include measurements containing exactly `mean()` or `std()` in their variable label by setting the `fixed` parameter of the `grepl` function to FALSE.
 	* Variables with `meanFreq` were not included as I did not interpret this weighted average of the frequency components to be a "mean" of the measurements.
 	* Similiarly features such as `angle(X,gravityMean)` were not included.
 5. Uses descriptive activity names in the activity_labels.txt file to name the activities in the data set by converting them to a factor and using the character vector as the labels for the levels.
