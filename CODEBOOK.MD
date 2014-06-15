@@ -18,8 +18,9 @@ activities
 		5. STANDING
 		6. LAYING
 
-561- continuous measurements were gathered - some as time and some as frequency.  66 of those based on mean or standard deviation are in the data set.
-Mean was taken for each measurement by each subject performing each activity to produce a 180 rows of 66 measurements
+561- continuous measurements were gathered - some as time and some as frequency.  
+66 of those based on mean or standard deviation are in the data set.
+Mean was taken for each measurement by each subject performing each activity to produce a 180 rows of 66 measurements.
  
 
 tBodyAcc-mean()-X
