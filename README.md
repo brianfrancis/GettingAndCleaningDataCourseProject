@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 The course project for Getting and Cleaning Data course
 requires that for a set of files located here:
@@ -10,7 +10,7 @@ we construct an R script called run_analysis.R that does the following:
 4. Appropriately labels the data set with descriptive variable names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-### The functions
+## The functions
 
 The script run_analysis.R contains the following functions
 
@@ -46,13 +46,13 @@ The function then does the following:
 2. Combines the rows of observations for test and train subjects into a single data frame
 3. Labels the data set with descriptive variable names using the values found in features.txt
 4. Subsets the dataset to only include measurements containing exactly "mean()" or "std()" in their varaible label by using the "fixed" parameter of the grepl function.
-	*Variables with meanFreq were not included as I did not interpret this as a mean of a measurement
+	*Variables with meanFreq were not included as I did not interpret this weighted average of the frequency components to be a "mean" of the measurements.
 	*Similiarly features such as "angle(X,gravityMean)" were not included.
 5. Uses descriptive activity names in the activity_labels.txt file to name the activities in the data set by converting them to a factor and using the labels as the labels for the levels.
 
 This tiddy data frame which still contains a row for each observation in X_test.txt and X_train.txt is then returned by the function
 
-## run_analysis
+### run_analysis
 
 This is the main function in the script and call both get_data and merge_data.  
 It receives a directory as a parameter with a default of "getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset"
@@ -66,3 +66,16 @@ It does the following:
 5. Writes this second tidy data set to the working directory as a tab delimited text file called tidy.txt.
 
 
+## Instructions
+
+1. Download the raw data to your working directory https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+2. Unzip the raw data in your working directory and name the folder: getdata-projectfiles-UCI HAR Dataset
+
+3. Download run_analysis.R to your working directory from https://github.com/brianfrancis/GettingAndCleaningDataCourseProject
+
+4. In R run: source("run_analysis.R");
+
+5. In R run: run_analysis();
+
+This will produce the tab delimieted tidy data set as the file tidy.txt in the working directory.
