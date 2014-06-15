@@ -72,7 +72,7 @@ merge_data <- function(data) {
         y <- grepl("std()", data$features[,2], fixed=TRUE)
         
         ##return a a vector of column names that we want to include
-        include <- c("subjects", "activities", features[x | y ,2])
+        include <- c("subjects", "activities", data$features[x | y ,2])
         
         ##subset the columns to be just "subject", activities", and
         ##measurements conatining "mean()" or "std()"
