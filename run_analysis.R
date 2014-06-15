@@ -105,7 +105,7 @@ run_analysis <- function(directory = "getdata-projectfiles-UCI HAR Dataset/UCI H
         merged <- merge_data(data)
         
         ##write the merged data frame to a text file
-        write.table(merged,"merged.txt", sep="\t")
+        write.table(merged,"merged.txt", sep="\t", row.names=FALSE)
         
         ##get the number of columns in the merged data set
         n <- ncol(merged)
@@ -119,6 +119,6 @@ run_analysis <- function(directory = "getdata-projectfiles-UCI HAR Dataset/UCI H
                                 )
         
         ##write the tidy data frame of summarized values to a text file
-        write.table(tidy,"tidy.txt", sep="\t")
+        write.table(tidy,"tidy.txt", sep="\t", row.names=FALSE)
         
 }
